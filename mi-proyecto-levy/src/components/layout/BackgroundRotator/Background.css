@@ -1,0 +1,68 @@
+.backgroundContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 725px;
+    height: 615px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bgImage {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+    z-index: 1;
+}
+
+.bgImage.fade {
+    z-index: 0;
+    opacity: 0;
+}
+
+.bgImage.fade.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.bgImage::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #f9f9f9, rgba(128, 128, 128, 0));
+}
+
+@media (max-width: 800px) {
+
+    .backgroundContainer {
+        background-image: url("/rock.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 600px;
+        height: 650px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .bgImage {
+        display: none;
+        visibility: hidden;
+    }
+
+    .backgroundContainer::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, #f9f9f9, rgba(128, 128, 128, 0));
+    }
+
+    .backgroundContainer::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to left, #f9f9f9, rgba(128, 128, 128, 0));
+    }
+}

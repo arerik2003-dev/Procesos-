@@ -1,3 +1,93 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  color: #333333;
+  font-size: 1.4rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-color: #6588DA rgba(0, 0, 0, 0);
+}
+
+body {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+main {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 2rem 5vw ;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 200%;
+  height: 200%;
+
+  background-image:
+    linear-gradient(#003f7908 1px, transparent 1px),
+    linear-gradient(90deg, #003f7908 1px, transparent 1px);
+
+  background-size: 48px 48px;
+  pointer-events: none;
+
+  transform: translate(-50%, -50%) rotate(15deg);
+  transform-origin: center;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+input,
+select {
+  flex: 1;
+  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
+  padding: 0.75rem;
+  border: 1px solid #6588DA;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: black;
+  height: 3.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  background-color: #f9f9f9;
+  outline: none;
+  box-shadow: 0px 0px 8px 2px rgba(0, 62, 121, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+input:disabled,
+select:disabled {
+  background-color: #cfcfcf;
+  transition: all 0.2s ease-in-out;
+}
