@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "titulo": "Modelo de Urnas de Pólya",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Ramificación",
+    "pdfUrl": "/pdfs/ModeloUrnasPoyla.pdf"
+  },
+  {
+    "id": 2,
+    "titulo": "Procesos de Recompensa de Renovación",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Renovación",
+    "pdfUrl": "/pdfs/Procesos_de_recompensa_de_renovacion (4).pdf"
+  },
+  {
+    "id": 3,
+    "titulo": "Desigualdades de Doob",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Martingalas",
+    "pdfUrl": "/pdfs/desigualdades de duub.pdf"
+  },
+  {
+    "id": 4,
+    "titulo": "Puente Browniano",
+    "autor": "Arath Yahir Montero Hernández",
+    "fecha": "2026-05-19",
+    "category": "Movimiento Browniano",
+    "pdfUrl": "/pdfs/puente_browniano.pdf"
+  },
+  {
+    "id": 5,
+    "titulo": "Proceso de Poisson",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Procesos de Poisson",
+    "pdfUrl": "/pdfs/Proceso de Poisson_GonzálezReyes.pdf"
+  },
+  {
+    "id": 6,
+    "titulo": "Paro Óptimo y Envolvente de Snell",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Martingalas",
+    "pdfUrl": "/pdfs/Paro Óptimo y Envolvente de Snell.pdf"
+  },
+  {
+    "id": 7,
+    "titulo": "Procesos de Renovación",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Renovación",
+    "pdfUrl": "/pdfs/Procesos de REnovacion.pdf"
+  }
+]

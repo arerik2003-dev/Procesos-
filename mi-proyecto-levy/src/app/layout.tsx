@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "../components/layout/Header/Header";
-import Footer from "../components/layout/Footer/Footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
+const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800", "900"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Procesos",
-    template: "Procesos | %s",
+    default: "Procesos Estocásticos - FES Acatlán",
+    template: "Procesos Estocásticos | %s",
   },
-  description: "Administracion de presupuesto en la FES Acatlan",
-  authors: [{ name: "FES Acatlán" }],
-  creator: "Lino & Erick",
+  description: "Repositorio interactivo de Procesos Estocásticos - Facultad de Estudios Superiores Acatlán, UNAM",
+  authors: [{ name: "FES Acatlán, UNAM" }],
+  creator: "FES Acatlán",
+  keywords: ["Procesos Estocásticos", "Probabilidad", "Matemáticas", "UNAM", "FES Acatlán"],
 };
 
 export default function RootLayout({
@@ -22,12 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className}>
-        <Header />
-        {/* <HeaderAnterior /> */}
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
