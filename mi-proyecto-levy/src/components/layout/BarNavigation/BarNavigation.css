@@ -10,7 +10,7 @@
 
 .barNavigation ul {
   display: flex;
-  justify-content: left;
+  justify-content: end;
   width: 100%;
   gap: 10px;
   transition: width 0.5 ease-in-out;

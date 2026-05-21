@@ -9,8 +9,11 @@ interface SidebarProps {
 
 export const Sidebar: React.FC<SidebarProps> = ({ categorias, presentaciones, selectedId, setSelectedId }) => {
   return (
-    <aside className="w-80 bg-white border-r border-gray-200 p-8 overflow-y-auto sticky top-20 h-[calc(100vh-5rem)]">
-      <h2 className="text-sm font-bold text-blue-900 uppercase tracking-wider mb-6">Índice de Temas</h2>
+    <aside className=" bg-white border-r border-gray-200 p-8 overflow-y-auto sticky top-20 ">
+      <h2 className="text-sm font-bold uppercase tracking-wider mb-6"
+      style={{color:"#015cb8",textAlign:"center"
+        ,margin:"1rem 0"
+      }}>Índice de Temas</h2>
       
       <nav className="flex flex-col gap-8">
         {categorias.map((cat) => (

@@ -39,123 +39,56 @@ export default function BarNavigation() {
       <ul className={openMenu ? "active" : ""}>
 
         <li
-          className={`subMenu 
-            ${openSubMenu === 0 ? "open" : ""}
-            ${isActive(["/Inscripcion", "/AgregarTiempo"]) ? "active" : ""}
-          `}>
-          <span onClick={() => toggleSubMenu(0)}>
-            <Image
-              src="/user-plus.svg"
-              alt="Logo FES"
-              width={16}
-              height={16}
-              color="#545454"
-            />
-            Inscripciones</span>
-          <ul onClick={toggleMenu}>
-            <Link
-              href="/Inscripcion"
-              className="links"
-              onClick={(e) => {
-                e.stopPropagation();
-                closeAllMenus();
-              }}
-            >
-              <li>Inscripción Usuario</li>
-            </Link>
-            <Link
-              href="/AgregarTiempo"
-              className="links"
-              onClick={(e) => {
-                e.stopPropagation();
-                closeAllMenus();
-              }}
-            >
-              <li>Agregar Tiempo</li>
-            </Link>
-          </ul>
+          className={`subMenu
+          ${isActive(["/"]) ? "active" : ""}
+          `}
+          onClick={toggleMenu}>
+          <Link
+            href="/"
+            className="links"
+            onClick={(e) => {
+              e.stopPropagation();
+              closeAllMenus();
+            }}
+          >
+            <span>Inicio</span>
+          </Link>
         </li>
 
         <li
           className={`subMenu
-          ${isActive(["/base"]) ? "active" : ""}
+          ${isActive(["/materiales"]) ? "active" : ""}
           `}
           onClick={toggleMenu}>
           <Link
-            href="/base"
+            href="/materiales"
             className="links"
             onClick={(e) => {
               e.stopPropagation();
               closeAllMenus();
             }}
           >
-            <span>Base</span>
+            <span>Materiales</span>
           </Link>
         </li>
+
         <li
           className={`subMenu
-          ${isActive(["/ur"]) ? "active" : ""}
+          ${isActive(["/contacto"]) ? "active" : ""}
           `}
           onClick={toggleMenu}>
           <Link
-            href="/ur"
+            href="/contacto"
             className="links"
             onClick={(e) => {
               e.stopPropagation();
               closeAllMenus();
             }}
           >
-            <span>Ur</span>
+            <span>Contacto</span>
           </Link>
         </li>
-        <li
-          className={`subMenu
-          ${isActive(["/matriz"]) ? "active" : ""}
-          `}
-          onClick={toggleMenu}>
-          <Link
-            href="/matriz"
-            className="links"
-            onClick={(e) => {
-              e.stopPropagation();
-              closeAllMenus();
-            }}
-          >
-            <span>Matriz</span>
-          </Link>
-        </li>
-        <li
-          className={`subMenu
-          ${isActive(["/almacen"]) ? "active" : ""}
-          `}
-          onClick={toggleMenu}>
-          <Link
-            href="/almacen"
-            className="links"
-            onClick={(e) => {
-              e.stopPropagation();
-              closeAllMenus();
-            }}
-          >
-            <span>Almacen</span>
-          </Link>
-        </li>
-        <li
-          className={`subMenu
-          ${isActive(["/info-presupuesto"]) ? "active" : ""}
-          `}
-          onClick={toggleMenu}>
-          <Link
-            href="/info-presupuesto"
-            className="links"
-            onClick={(e) => {
-              e.stopPropagation();
-              closeAllMenus();
-            }}
-          >
-            <span>Información Presupuestal</span>
-          </Link>
-        </li>
+
       </ul>
     </nav>
   );

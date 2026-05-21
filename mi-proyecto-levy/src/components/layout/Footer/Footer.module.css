@@ -6,6 +6,7 @@
   background-color: #002868;
   z-index: 0;
   overflow: hidden;
+  border-top: 1px solid #d08700;
 }
 
 .footer p {

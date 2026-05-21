@@ -8,7 +8,11 @@ export default function HeaderNavigation({ role }: { role: number }) {
   const pathname = usePathname();
 
   if (pathname === "/") {
-    return null;
+    return (
+      <>
+        {role === 1 && <BarNavigation />}
+      </>
+    )
   }
 
   return (

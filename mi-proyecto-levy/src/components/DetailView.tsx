@@ -15,14 +15,14 @@ export const DetailView: React.FC<DetailViewProps> = ({ selected, onBack }) => {
         variant="outline"
         size="sm"
         onClick={onBack}
-        className="mb-6"
+        style={{marginBottom:"1rem"}}
       >
         ← Volver al Inicio
       </Button>
 
       {/* Card de Metadatos */}
-      <Card shadow="sm" className="p-8 mb-8">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">
+      <Card shadow="sm" className="p-8">
+        <h2 className="text-3xl font-bold" style={{color:"#015cb8",marginBottom:"1rem"}}>
           {selected.titulo}
         </h2>
 
