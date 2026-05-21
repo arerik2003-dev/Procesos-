@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import presentaciones from "../../data/presentaciones.json";
-import { Sidebar } from "../../components/layout/Sidebar";
+import { Sidebar } from "../../components/layout/Sidebar/Sidebar";
 import { WelcomeSection } from "../../components/WelcomeSection";
-import { DetailView } from "../../components/DetailView";
+import { DetailView } from "../../components/detailview/DetailView";
 
 const categorias = [
   "Ramificación",
@@ -76,7 +76,7 @@ export default function Page() {
         />
 
         {/* Contenido Principal */}
-        <section className="flex-1 p-8 overflow-y-auto" style={{margin:"4rem",display:"flex",justifyContent:"center"}}>
+        <section className="flex-1 p-8 overflow-y-auto" style={{margin:"2.5rem",display:"flex",justifyContent:"center"}}>
           {!selected ? (
             <WelcomeSection tarjetasInfomativas={tarjetasInfomativas} />
           ) : (

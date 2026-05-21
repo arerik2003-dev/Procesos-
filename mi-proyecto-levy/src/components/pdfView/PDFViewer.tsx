@@ -5,16 +5,23 @@ import { useEffect, useState } from 'react';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
+import './pdfViewer.css';
+
 interface PDFViewerProps {
   pdfUrl: string;
   title: string;
 }
 
-export default function PDFViewer({ pdfUrl, title }: PDFViewerProps) {
+export default function PDFViewer({
+  pdfUrl,
+  title,
+}: PDFViewerProps) {
   const [Document, setDocument] = useState<any>(null);
   const [Page, setPage] = useState<any>(null);
 
-  const [numPages, setNumPages] = useState<number | null>(null);
+  const [numPages, setNumPages] =
+    useState<number | null>(null);
+
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
@@ -41,45 +48,52 @@ export default function PDFViewer({ pdfUrl, title }: PDFViewerProps) {
 
   if (!Document || !Page) {
     return (
-      <div className="w-full flex justify-center p-10">
-        Cargando PDF...
+      <div className="pdf-loading">
+        <div className="loader"></div>
+        <span>Cargando PDF...</span>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col items-center w-full bg-white rounded-xl shadow-lg border border-gray-100 p-4">
-      <div className="overflow-auto w-full flex justify-center">
+    <div className="pdf-viewer">
+      <div className="pdf-title">
+        <h4>{title}</h4>
+      </div>
+
+      <div className="pdf-document-wrapper">
         <Document
           file={pdfUrl}
           onLoadSuccess={onDocumentLoadSuccess}
-          className="max-w-full"
+          className="pdf-document"
         >
           <Page
             pageNumber={pageNumber}
             renderTextLayer
             renderAnnotationLayer
-            className="shadow-md"
+            className="pdf-page"
           />
         </Document>
       </div>
 
       {numPages && (
-        <div className="flex items-center justify-between w-full mt-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
+        <div className="pdf-controls">
           <button
             disabled={pageNumber <= 1}
             onClick={() =>
-              setPageNumber((prev) => Math.max(prev - 1, 1))
+              setPageNumber((prev) =>
+                Math.max(prev - 1, 1)
+              )
             }
-            className="px-4 py-2 bg-blue-900 rounded hover:bg-blue-800 disabled:opacity-50"
-            style={{color:"white"}}
+            className="pdf-btn"
           >
-            Anterior
+            ← Anterior
           </button>
 
-          <span className="text-sm font-medium text-gray-700">
-            Página {pageNumber} de {numPages}
-          </span>
+          <div className="pdf-page-indicator">
+            Página <strong>{pageNumber}</strong> de{' '}
+            <strong>{numPages}</strong>
+          </div>
 
           <button
             disabled={pageNumber >= numPages}
@@ -88,10 +102,9 @@ export default function PDFViewer({ pdfUrl, title }: PDFViewerProps) {
                 Math.min(prev + 1, numPages)
               )
             }
-            className="px-4 py-2 bg-blue-900 rounded hover:bg-blue-800 disabled:opacity-50"
-            style={{color:"white"}}
+            className="pdf-btn"
           >
-            Siguiente
+            Siguiente →
           </button>
         </div>
       )}

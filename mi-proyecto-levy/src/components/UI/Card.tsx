@@ -23,7 +23,6 @@ export default function Card({
   return (
     <div
       className={`bg-white rounded-lg border border-gray-200 ${shadowStyles[shadow]} ${className}`}
-      style={{marginBottom:"1.5rem"}}
     >
       {children}
     </div>

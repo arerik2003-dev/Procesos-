@@ -1,0 +1,157 @@
+/* sidebar.css */
+
+.sidebar {
+  width: 320px;
+  height: calc(100vh - 80px);
+  position: sticky;
+  top: 80px;
+  overflow-y: auto;
+
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f8fbff
+  );
+
+  border-right: 1px solid #e5e7eb;
+  padding: 2rem 1.5rem;
+
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.03);
+}
+
+/* Scroll bonito */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.sidebar-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #015cb8;
+  margin-bottom: 0.8rem;
+}
+
+.sidebar-line {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    to right,
+    #015cb8,
+    #facc15
+  );
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #6b7280;
+
+  padding-left: 0.3rem;
+}
+
+.presentation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  border-left: 2px solid #facc15;
+  padding-left: 0.8rem;
+}
+
+.presentation-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  text-align: left;
+
+  background: transparent;
+
+  padding: 0.9rem 1rem;
+
+  border-radius: 14px;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+
+  transition: all 0.25s ease;
+}
+
+.presentation-btn:hover {
+  background: rgba(1, 92, 184, 0.08);
+  transform: translateX(4px);
+
+  color: #015cb8;
+}
+
+.presentation-btn.active {
+  background: linear-gradient(
+    135deg,
+    rgba(1, 92, 184, 0.12),
+    rgba(250, 204, 21, 0.15)
+  );
+
+  color: #015cb8;
+
+  font-weight: 700;
+
+  box-shadow: 0 4px 12px rgba(1, 92, 184, 0.08);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: #d1d5db;
+
+  transition: all 0.25s ease;
+}
+
+.presentation-btn:hover .dot {
+  background: #015cb8;
+}
+
+.presentation-btn.active .dot {
+  background: #facc15;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.7);
+}
