@@ -21,7 +21,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Martingalas",
-    "pdfUrl": "/pdfs/desigualdades de duub.pdf"
+    "pdfUrl": "/pdfs/Landaverde Mora Pedro Iván.pdf"
   },
   {
     "id": 4,
@@ -54,5 +54,165 @@
     "fecha": "2026-05-19",
     "category": "Renovación",
     "pdfUrl": "/pdfs/Procesos de REnovacion.pdf"
+  },
+  {
+    "id": 8,
+    "titulo": "Medida Generada por Funciones de Distribución",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Fundamentos",
+    "pdfUrl": "/pdfs/Medida_Generada_Distribuciones.pdf"
+  },
+  {
+    "id": 9,
+    "titulo": "Área de Lévy",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Movimiento Browniano",
+    "pdfUrl": "/pdfs/Area_de_Levy.pdf"
+  },
+  {
+    "id": 10,
+    "titulo": "Procesos de Galton-Watson y Extinción",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Ramificación",
+    "pdfUrl": "/pdfs/Galton_Watson_y_Extinción.pdf"
+  },
+  {
+    "id": 11,
+    "titulo": "Redes de Colas de Jackson",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Teoría de Colas",
+    "pdfUrl": "/pdfs/Redes_Colas_Jackson.pdf"
+  },
+  {
+    "id": 12,
+    "titulo": "Modelo SIR Estocástico (Epidemiología)",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Procesos Epidemiológicos",
+    "pdfUrl": "/pdfs/Modelo_SIR_Estocastico.pdf"
+  },
+  {
+    "id": 13,
+    "titulo": "Caminatas Aleatorias Auto-evitantes (SAW)",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Cadenas de Markov",
+    "pdfUrl": "/pdfs/Caminatas_Auto_Evitantes.pdf"
+  },
+  {
+    "id": 14,
+    "titulo": "Ruina del Jugador",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Cadenas de Markov",
+    "pdfUrl": "/pdfs/Ruina_del_Jugador.pdf"
+  },
+  {
+    "id": 15,
+    "titulo": "Proceso de Poisson Compuesto",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Procesos de Poisson",
+    "pdfUrl": "/pdfs/Proceso de Poisson Compuesto_GonzálezReyes.pdf"
+  },
+  {
+    "id": 16,
+    "titulo": "Algoritmo de Metropolis",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Cadenas de Markov",
+    "pdfUrl": "/pdfs/Algoritmo_Metropolis.pdf"
+  },
+  {
+    "id": 17,
+    "titulo": "H Transformada",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Fundamentos",
+    "pdfUrl": "/pdfs/H_Transformada.pdf"
+  },
+  {
+    "id": 18,
+    "titulo": "Generador Infinitesimal en Tiempo Continuo",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Fundamentos",
+    "pdfUrl": "/pdfs/Generador_Infinitesimal.pdf"
+  },
+  {
+    "id": 19,
+    "titulo": "Teorema de Límite Central para Cadenas de Markov",
+    "autor": "Daniel Luna",
+    "fecha": "2026-05-19",
+    "category": "Martingalas",
+    "pdfUrl": "/pdfs/Teorema de limte central_Daniel Luna.pdf"
+  },
+  {
+    "id": 20,
+    "titulo": "Teorema de Donsker",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Movimiento Browniano",
+    "pdfUrl": "/pdfs/Teorema_Donsker.pdf"
+  },
+  {
+    "id": 21,
+    "titulo": "Propiedades del Movimiento Browniano",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Movimiento Browniano",
+    "pdfUrl": "/pdfs/Propiedades_Movimiento_Browniano.pdf"
+  },
+  {
+    "id": 22,
+    "titulo": "Integral Estocástica Discreta",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Movimiento Browniano",
+    "pdfUrl": "/pdfs/Integral_Estocastica_Discreta.pdf"
+  },
+  {
+    "id": 23,
+    "titulo": "Lema de Borel-Cantelli",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Martingalas",
+    "pdfUrl": "/pdfs/LemaBorel_Cantelli_ProcesosEstocásticos.pdf"
+  },
+  {
+    "id": 24,
+    "titulo": "Procesos de Poisson Puntuales",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Procesos de Poisson",
+    "pdfUrl": "/pdfs/Procesos_Poisson_Puntuales.pdf"
+  },
+  {
+    "id": 25,
+    "titulo": "Teoría de Colas (Sistemas de Espera)",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Teoría de Colas",
+    "pdfUrl": "/pdfs/Teoria_Colas_Sistemas_Espera.pdf"
+  },
+  {
+    "id": 26,
+    "titulo": "Procesos de Cox (Poisson Doblemente Estocástico)",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Procesos de Poisson",
+    "pdfUrl": "/pdfs/Procesos_Cox.pdf"
+  },
+  {
+    "id": 27,
+    "titulo": "Procesos de Ramificación",
+    "autor": "Autor Pendiente",
+    "fecha": "2026-05-19",
+    "category": "Ramificación",
+    "pdfUrl": "/pdfs/Procesos_Ramificacion.pdf"
   }
 ]

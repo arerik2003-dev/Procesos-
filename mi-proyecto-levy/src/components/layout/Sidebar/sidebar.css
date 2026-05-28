@@ -2,10 +2,12 @@
 
 .sidebar {
   width: 320px;
+  flex-shrink: 0;
   height: calc(100vh - 80px);
   position: sticky;
   top: 80px;
   overflow-y: auto;
+  overflow-x: hidden;
 
   background: linear-gradient(
     to bottom,
