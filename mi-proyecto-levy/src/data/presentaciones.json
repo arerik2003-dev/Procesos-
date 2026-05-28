@@ -37,7 +37,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos de Poisson",
-    "pdfUrl": "/pdfs/Proceso de Poisson_GonzálezReyes.pdf"
+    "pdfUrl": "/"
   },
   {
     "id": 6,
@@ -85,7 +85,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Teoría de Colas",
-    "pdfUrl": "/pdfs/Redes_Colas_Jackson.pdf"
+    "pdfUrl": "/pdfs/redes de colas.pdf"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos de Poisson",
-    "pdfUrl": "/pdfs/Proceso de Poisson Compuesto_GonzálezReyes.pdf"
+    "pdfUrl": "/pdfs/Proceso de Poisson Compuesto_GonzálezReyes (1).pdf"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Fundamentos",
-    "pdfUrl": "/pdfs/Generador_Infinitesimal.pdf"
+    "pdfUrl": "/pdfs/generador en tiempo continuo.pdf"
   },
   {
     "id": 19,
@@ -157,7 +157,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Movimiento Browniano",
-    "pdfUrl": "/pdfs/Teorema_Donsker.pdf"
+    "pdfUrl": "/pdfs/Dunsker.pdf"
   },
   {
     "id": 21,
@@ -173,7 +173,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Movimiento Browniano",
-    "pdfUrl": "/pdfs/Integral_Estocastica_Discreta.pdf"
+    "pdfUrl": "/pdfs/integral estocastica.pdf"
   },
   {
     "id": 23,
@@ -189,7 +189,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos de Poisson",
-    "pdfUrl": "/pdfs/Procesos_Poisson_Puntuales.pdf"
+    "pdfUrl": "/pdfs/poisson puntual.pdf"
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Teoría de Colas",
-    "pdfUrl": "/pdfs/Teoria_Colas_Sistemas_Espera.pdf"
+    "pdfUrl": "/pdfs/teoria de colas.pdf"
   },
   {
     "id": 26,
