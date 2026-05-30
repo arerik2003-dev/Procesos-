@@ -24,9 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      {/*
+        flex flex-col min-h-screen  → columna que ocupa toda la pantalla
+        El Header tiene ~64px de altura → el <main> lleva pt-16 para no quedar oculto
+      */}
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Header />
-        {children}
+        <main className="flex flex-col flex-grow w-full pt-16">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

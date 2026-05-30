@@ -13,7 +13,7 @@ export default function LandingPage() {
 
       {/* Contenido Hero */}
       <div className="flex-1 relative z-10 flex flex-col items-center justify-center text-white">
-        <h1 className="text-6xl font-bold mb-6 drop-shadow-lg">Bienvenido al Seminario</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg text-center px-4">Procesos Estocásticos</h1>
         <Link 
           href="/materiales"
           className="bg-transparent border-2 border-[#BB8800] text-white px-10 py-4 rounded-lg font-bold text-xl hover:bg-[#BB8800] transition-all duration-300 shadow-xl backdrop-blur-sm"

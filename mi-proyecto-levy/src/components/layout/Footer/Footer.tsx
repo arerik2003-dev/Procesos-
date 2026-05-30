@@ -1,4 +1,3 @@
-import { ST } from "next/dist/shared/lib/utils";
 import Style from "./Footer.module.css";
 
 function Footer() {
@@ -6,43 +5,48 @@ function Footer() {
 
   return (
     <footer className={Style.footer}>
-      {/* <div className={Style.yellowPart}></div>
-       */}
       <div className={Style.text}>
-
-        <div className="max-w-7xl mx-auto px-6 py-8" style={{ marginBottom: "20px" }}>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8" style={{ display: "flex", gap: "30px" }}>
-            <div style={{ textAlign: "start", width: "fit-content" }}>
-              <h3 className="font-bold mb-2" style={{ color: "#d08700" }}>Institución</h3>
-              <p className="text-sm text-blue-100">
-                Facultad de Estudios Superiores Acatlán<br />
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
+            <div>
+              <h3 className="font-bold mb-2 text-sm sm:text-base" style={{ color: "#d08700" }}>
+                Institución
+              </h3>
+              <p className="text-xs sm:text-sm text-blue-100">
+                Facultad de Estudios Superiores Acatlán
+                <br />
                 Universidad Nacional Autónoma de México
               </p>
             </div>
-            <div style={{ textAlign: "start", width: "fit-content" }}>
-              <h3 className="font-bold text-yellow-600 mb-2" style={{ color: "#d08700" }}>Carrera</h3>
-              <p className="text-sm text-blue-100">
-                Matemáticas Aplicadas y Computación<br />
+            <div>
+              <h3 className="font-bold mb-2 text-sm sm:text-base" style={{ color: "#d08700" }}>
+                Carrera
+              </h3>
+              <p className="text-xs sm:text-sm text-blue-100">
+                Matemáticas Aplicadas y Computación
+                <br />
                 Procesos Estocásticos
               </p>
             </div>
-            <div style={{ textAlign: "start", width: "fit-content" }}>
-              <h3 className="font-bold text-yellow-600 mb-2" style={{ color: "#d08700" }}>Contacto</h3>
-              <p className="text-sm text-blue-100">
-                Semestre 2026-1<br />
+            <div>
+              <h3 className="font-bold mb-2 text-sm sm:text-base" style={{ color: "#d08700" }}>
+                Contacto
+              </h3>
+              <p className="text-xs sm:text-sm text-blue-100">
+                Semestre 2026-1
+                <br />
                 Grupo: 2751
               </p>
             </div>
           </div>
         </div>
 
-        <p className={Style['footer-p']}>
+        <p className={`${Style["footer-p"]} text-xs sm:text-sm`}>
           © {year.getFullYear()}. FES Acatlán, UNAM. Todos los derechos reservados.
         </p>
       </div>
-      {/* <div className={Style.yellowPartOpuest}></div> */}
     </footer>
-  )
+  );
 }
 
 export default Footer;
