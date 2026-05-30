@@ -30,7 +30,10 @@ export default function RootLayout({
       */}
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Header />
-        <main className="flex flex-col flex-grow w-full pt-16">
+        <main
+          className="flex flex-col flex-grow w-full"
+          style={{ paddingTop: 'var(--header-height)' }}
+        >
           {children}
         </main>
         <Footer />

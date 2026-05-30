@@ -2,6 +2,27 @@
 
 @import "tailwindcss";
 
+/*
+  --header-height: altura real del header según breakpoint.
+  Se usa en layout.tsx como padding-top del <main>.
+  Ajusta estos valores si el header crece o se reestructura.
+*/
+:root {
+  --header-height: 100px; /* móvil: logos + nav apilados */
+}
+
+@media (min-width: 640px) {
+  :root {
+    --header-height: 80px; /* tablet */
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --header-height: 64px; /* desktop: logos y nav en una fila */
+  }
+}
+
 * {
   box-sizing: border-box;
 }
