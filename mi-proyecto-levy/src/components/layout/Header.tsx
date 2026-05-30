@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const Header = () => {
   return (
     <header className="w-full bg-[#002B7A] text-white shadow-lg border-b-4 border-[#BB8800] sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 h-20 grid grid-cols-3 items-center">
+      <div className="max-w-7xl mx-auto px-6 h-20 grid grid-cols-2 items-center">
         
         {/* Izquierda: Identidad Institucional */}
         <div className="flex items-center gap-4">
@@ -18,10 +18,7 @@ export const Header = () => {
           </div>
         </div>
 
-        {/* Centro: Título del Portal */}
-        <div className="text-center">
-          <span className="text-xl font-light tracking-widest text-[#F2F2F2]">Procesos Estocásticos</span>
-        </div>
+
 
         {/* Derecha: Navegación */}
         <nav className="flex justify-end">
