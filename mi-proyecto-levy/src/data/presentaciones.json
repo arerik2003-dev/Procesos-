@@ -5,7 +5,13 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Ramificación",
-    "pdfUrl": "/pdfs/ModeloUrnasPoyla.pdf"
+    "pdfUrl": "/pdfs/ModeloUrnasPoyla.pdf",
+    "contexto": {
+        "teoria": "Modelo estocástico de procesos de ramificación donde el refuerzo aumenta la probabilidad de elección.",
+        "conceptos": ["Refuerzo positivo", "Invarianza", "Proceso de Polya"],
+        "aplicacion": "Modelado de propagación de enfermedades y modelos de aprendizaje social."
+    },
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 2,
@@ -13,7 +19,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Renovación",
-    "pdfUrl": "/pdfs/Procesos_de_recompensa_de_renovacion (4).pdf"
+    "pdfUrl": "/pdfs/Procesos_de_recompensa_de_renovacion (4).pdf",
+    "resumen": "Análisis de recompensas acumuladas entre eventos de renovación.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 3,
@@ -21,7 +29,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Martingalas",
-    "pdfUrl": "/pdfs/Landaverde Mora Pedro Iván.pdf"
+    "pdfUrl": "/pdfs/Landaverde Mora Pedro Iván.pdf",
+    "resumen": "Desigualdades fundamentales para martingalas y submartingalas.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 4,
@@ -29,7 +39,9 @@
     "autor": "Arath Yahir Montero Hernández",
     "fecha": "2026-05-19",
     "category": "Movimiento Browniano",
-    "pdfUrl": "/pdfs/puente_browniano.pdf"
+    "pdfUrl": "/pdfs/puente_browniano.pdf",
+    "resumen": "Movimiento Browniano condicionado a terminar en cero.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 5,
@@ -37,7 +49,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos de Poisson",
-    "pdfUrl": "/"
+    "pdfUrl": "/pdfs/Proceso de Poisson_GonzálezReyes.pdf",
+    "resumen": "Estudio de eventos aleatorios que ocurren en el tiempo.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 6,
@@ -45,7 +59,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Martingalas",
-    "pdfUrl": "/pdfs/Paro Óptimo y Envolvente de Snell.pdf"
+    "pdfUrl": "/pdfs/Paro Óptimo y Envolvente de Snell.pdf",
+    "resumen": "Introducción al paro óptimo y la construcción de la envolvente de Snell.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 7,
@@ -53,7 +69,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Renovación",
-    "pdfUrl": "/pdfs/Procesos de REnovacion.pdf"
+    "pdfUrl": "/pdfs/Procesos de REnovacion.pdf",
+    "resumen": "Estudio de los tiempos de espera entre eventos recurrentes.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 8,
@@ -61,7 +79,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Fundamentos",
-    "pdfUrl": "/pdfs/funciones de distribucion.pdf"
+    "pdfUrl": "/pdfs/funciones de distribucion.pdf",
+    "resumen": "Relación entre funciones de distribución y medidas de probabilidad.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 9,
@@ -69,7 +89,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Movimiento Browniano",
-    "pdfUrl": "/pdfs/levy.pdf"
+    "pdfUrl": "/pdfs/levy.pdf",
+    "resumen": "Estudio del área bajo una curva de movimiento Browniano.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 10,
@@ -77,7 +99,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Ramificación",
-    "pdfUrl": "/pdfs/Galton_Watson_y_Extinción.pdf"
+    "pdfUrl": "/pdfs/Galton_Watson_y_Extinción.pdf",
+    "resumen": "Análisis de la probabilidad de extinción en procesos de ramificación.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 11,
@@ -85,7 +109,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Teoría de Colas",
-    "pdfUrl": "/pdfs/redes de colas.pdf"
+    "pdfUrl": "/pdfs/redes de colas.pdf",
+    "resumen": "Redes abiertas de colas con comportamiento producto.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 12,
@@ -93,7 +119,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos Epidemiológicos",
-    "pdfUrl": "/pdfs/Modelo_SIR_Estocastico.pdf"
+    "pdfUrl": "/pdfs/Modelo_SIR_Estocastico.pdf",
+    "resumen": "Modelado estocástico de la propagación de enfermedades.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 13,
@@ -101,7 +129,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Cadenas de Markov",
-    "pdfUrl": "/pdfs/Caminatas_Auto_Evitantes.pdf"
+    "pdfUrl": "/pdfs/Caminatas_Auto_Evitantes.pdf",
+    "resumen": "Caminatas que no pueden visitar el mismo sitio dos veces.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 14,
@@ -109,7 +139,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Cadenas de Markov",
-    "pdfUrl": "/pdfs/Ruina_del_Jugador.pdf"
+    "pdfUrl": "/pdfs/Ruina_del_Jugador.pdf",
+    "resumen": "Análisis de la probabilidad de ruina en juegos de azar.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 15,
@@ -117,7 +149,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos de Poisson",
-    "pdfUrl": "/pdfs/Proceso de Poisson Compuesto_GonzálezReyes (1).pdf"
+    "pdfUrl": "/pdfs/Proceso de Poisson Compuesto_GonzálezReyes (1).pdf",
+    "resumen": "Suma aleatoria de variables independientes con tiempos de Poisson.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 16,
@@ -125,7 +159,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Cadenas de Markov",
-    "pdfUrl": "/pdfs/Algoritmo_Metropolis.pdf"
+    "pdfUrl": "/pdfs/Algoritmo_Metropolis.pdf",
+    "resumen": "Método de MCMC para muestreo de distribuciones.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 17,
@@ -133,7 +169,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Fundamentos",
-    "pdfUrl": "/pdfs/H_Transformada.pdf"
+    "pdfUrl": "/pdfs/H_Transformada.pdf",
+    "resumen": "Aplicación de transformadas para análisis de procesos.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 18,
@@ -141,7 +179,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Fundamentos",
-    "pdfUrl": "/pdfs/generador en tiempo continuo.pdf"
+    "pdfUrl": "/pdfs/generador en tiempo continuo.pdf",
+    "resumen": "Definición y propiedades del generador infinitesimal.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 19,
@@ -149,7 +189,9 @@
     "autor": "Daniel Luna",
     "fecha": "2026-05-19",
     "category": "Martingalas",
-    "pdfUrl": "/pdfs/Teorema de limte central_Daniel Luna.pdf"
+    "pdfUrl": "/pdfs/Teorema de limte central_Daniel Luna.pdf",
+    "resumen": "Extensión del TCL para cadenas de Markov ergódicas.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 20,
@@ -157,7 +199,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Movimiento Browniano",
-    "pdfUrl": "/pdfs/Dunsker.pdf"
+    "pdfUrl": "/pdfs/Dunsker.pdf",
+    "resumen": "Convergencia de caminatas aleatorias al Movimiento Browniano.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 21,
@@ -165,7 +209,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Movimiento Browniano",
-    "pdfUrl": "/pdfs/propiedades del movimiento browniano.pdf"
+    "pdfUrl": "/pdfs/propiedades del movimiento browniano.pdf",
+    "resumen": "Análisis de las propiedades de trayectoria del MB.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 22,
@@ -173,7 +219,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Movimiento Browniano",
-    "pdfUrl": "/pdfs/integral estocastica.pdf"
+    "pdfUrl": "/pdfs/integral estocastica.pdf",
+    "resumen": "Introducción a la integración contra procesos estocásticos.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 23,
@@ -181,7 +229,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Martingalas",
-    "pdfUrl": "/pdfs/LemaBorel_Cantelli_ProcesosEstocásticos.pdf"
+    "pdfUrl": "/pdfs/LemaBorel_Cantelli_ProcesosEstocásticos.pdf",
+    "resumen": "Resultados sobre la ocurrencia de eventos infinitos.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 24,
@@ -189,7 +239,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos de Poisson",
-    "pdfUrl": "/pdfs/poisson puntual.pdf"
+    "pdfUrl": "/pdfs/poisson puntual.pdf",
+    "resumen": "Definición de procesos de Poisson como medidas aleatorias.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 25,
@@ -197,7 +249,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Teoría de Colas",
-    "pdfUrl": "/pdfs/teoria de colas.pdf"
+    "pdfUrl": "/pdfs/teoria de colas.pdf",
+    "resumen": "Análisis de sistemas de servicio con colas.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 26,
@@ -205,7 +259,9 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Procesos de Poisson",
-    "pdfUrl": "/pdfs/procesos de cox.pdf"
+    "pdfUrl": "/pdfs/procesos de cox.pdf",
+    "resumen": "Procesos de Poisson donde la intensidad es estocástica.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   },
   {
     "id": 27,
@@ -213,6 +269,8 @@
     "autor": "Autor Pendiente",
     "fecha": "2026-05-19",
     "category": "Ramificación",
-    "pdfUrl": "/pdfs/Procesos_Ramificacion.pdf"
+    "pdfUrl": "/pdfs/Procesos_Ramificacion.pdf",
+    "resumen": "Análisis de poblaciones que se ramifican.",
+    "recursos": [{"titulo": "Documentación", "url": "#"}]
   }
 ]

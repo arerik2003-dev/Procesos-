@@ -1,51 +1,53 @@
 import React from 'react';
-import './sidebar.css';
+import { BookOpen, GitBranch, RefreshCw, TrendingUp, Network, Waves, Clock, Activity } from 'lucide-react';
 
 interface SidebarProps {
-  categorias: string[];
   presentaciones: any[];
   selectedId: number | null;
-  setSelectedId: (id: number | null) => void;
+  onSelect: (id: number) => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({
-  categorias,
-  presentaciones,
-  selectedId,
-  setSelectedId,
-}) => {
+const iconMap: Record<string, React.ElementType> = {
+  'Fundamentos': BookOpen,
+  'Ramificación': GitBranch,
+  'Renovación': RefreshCw,
+  'Martingalas': TrendingUp,
+  'Cadenas de Markov': Network,
+  'Movimiento Browniano': Waves,
+  'Teoría de Colas': Clock,
+  'Procesos Epidemiológicos': Activity
+};
+
+export const Sidebar: React.FC<SidebarProps> = ({ presentaciones, selectedId, onSelect }) => {
+  const categorias = Object.keys(iconMap);
+
   return (
-    <aside className="sidebar">
-      <div className="sidebar-header">
-        <h2>Índice de Temas</h2>
-        <div className="sidebar-line"></div>
-      </div>
-
-      <nav className="sidebar-nav">
-        {categorias.map((cat) => (
-          <div key={cat} className="category-block">
-            <p className="category-title">{cat}</p>
-
-            <ul className="presentation-list">
-              {presentaciones
-                .filter((p) => p.category === cat)
-                .map((p) => (
-                  <li key={p.id}>
-                    <button
-                      onClick={() => setSelectedId(p.id)}
-                      className={`presentation-btn ${
-                        selectedId === p.id ? 'active' : ''
-                      }`}
-                    >
-                      <span className="dot"></span>
-                      {p.titulo}
-                    </button>
-                  </li>
-                ))}
-            </ul>
+    <div className="p-4 space-y-4">
+      <div className="font-bold text-[#002B7A] uppercase tracking-wider text-xs mb-4">Índice</div>
+      {categorias.map(cat => {
+        const Icon = iconMap[cat];
+        const items = presentaciones.filter(p => p.category === cat);
+        
+        return (
+          <div key={cat} className="space-y-1">
+            <div className="flex items-center gap-3 p-2 text-[#002B7A] font-semibold">
+              <Icon size={20} />
+              <span className="text-sm">{cat}</span>
+            </div>
+            <div className="pl-8 space-y-1">
+              {items.map(p => (
+                <button 
+                  key={p.id}
+                  onClick={() => onSelect(p.id)}
+                  className={`w-full text-left p-2 text-sm rounded transition-colors ${selectedId === p.id ? 'bg-[#002B7A]/10 text-[#002B7A] font-medium' : 'text-gray-600 hover:bg-gray-100'}`}
+                >
+                  {p.titulo}
+                </button>
+              ))}
+            </div>
           </div>
-        ))}
-      </nav>
-    </aside>
+        );
+      })}
+    </div>
   );
 };

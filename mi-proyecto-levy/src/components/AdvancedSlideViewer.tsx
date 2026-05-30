@@ -97,9 +97,7 @@ export default function AdvancedSlideViewer({ dataUrl }: AdvancedSlideViewerProp
               remarkPlugins={[remarkMath]}
               rehypePlugins={[rehypeKatex]}
             >
-              {currentSlide.equations.map(eq => `$$${eq}$$`).join('
-
-')}
+              {currentSlide.equations.map(eq => `$$${eq}$$`).join('\\n\\n')}
             </ReactMarkdown>
           </div>
         </article>

@@ -69,10 +69,9 @@ export default function Page() {
 
       <div className="flex flex-1 w-full mx-auto">
         <Sidebar
-          categorias={categorias}
           presentaciones={presentaciones}
           selectedId={selectedId}
-          setSelectedId={setSelectedId}
+          onSelect={setSelectedId}
         />
 
         {/* Contenido Principal */}

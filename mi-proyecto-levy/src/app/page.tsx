@@ -1,126 +1,34 @@
-'use client';
+import Link from 'next/link';
 
-import { useState } from "react";
-import presentaciones from "../data/presentaciones.json";
-import { Sidebar } from "../components/layout/Sidebar/Sidebar";
-import { WelcomeSection } from "../components/WelcomeSection";
-import { DetailView } from "../components/detailview/DetailView";
-
-const categorias = [
-  "Fundamentos",
-  "Ramificación",
-  "Renovación",
-  "Martingalas",
-  "Cadenas de Markov",
-  "Movimiento Browniano",
-  "Procesos de Poisson",
-  "Teoría de Colas",
-  "Procesos Epidemiológicos"
-];
-
-const tarjetasInfomativas = [
-  {
-    titulo: "Material Interactivo",
-    descripcion: "Accede a presentaciones, demostraciones y modelos estocásticos diseñados para facilitar el aprendizaje.",
-    icono: "📊"
-  },
-  {
-    titulo: "Modelos Matemáticos",
-    descripcion: "Explora procesos como Browniano, Poisson, Cadenas de Markov y mucho más en detalle.",
-    icono: "∫"
-  },
-  {
-    titulo: "Fórmulas y Demostraciones",
-    descripcion: "Consulta desarrollos formales, teoremas y demostraciones académicas de cada tema.",
-    icono: "📐"
-  }
-];
-
-export default function Home() {
-  const [selectedId, setSelectedId] = useState<number | null>(null);
-
-  const selected = presentaciones.find((p) => p.id === selectedId);
-
+export default function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
-      {/* Header Institucional */}
-      <header className="bg-white border-b-2 border-blue-900 shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">∑</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-blue-900">Procesos Estocásticos</h1>
-              <p className="text-xs text-gray-600">FES Acatlán - UNAM</p>
-            </div>
-          </div>
-          <nav className="hidden md:flex gap-6">
-            <a href="#" className="text-gray-700 text-sm font-medium hover:text-blue-900 transition-colors">
-              Inicio
-            </a>
-            <a href="#" className="text-gray-700 text-sm font-medium hover:text-blue-900 transition-colors">
-              Materiales
-            </a>
-            <a href="#" className="text-gray-700 text-sm font-medium hover:text-blue-900 transition-colors">
-              Contacto
-            </a>
-          </nav>
-        </div>
-      </header>
+    <main className="min-h-screen flex flex-col relative">
+      {/* Hero Background - Biblioteca Central */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{ 
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("/images/biblioteca_central.jpg")' 
+        }}
+      />
 
-      <div className="flex flex-1 w-full">
-        <Sidebar 
-          categorias={categorias} 
-          presentaciones={presentaciones} 
-          selectedId={selectedId} 
-          setSelectedId={setSelectedId} 
-        />
-
-        {/* Contenido Principal */}
-        <main className="flex-1 px-6 overflow-y-auto w-full h-full flex flex-col">
-          {!selected ? (
-            <WelcomeSection tarjetasInfomativas={tarjetasInfomativas} />
-          ) : (
-            <DetailView selected={selected} onBack={() => setSelectedId(null)} />
-          )}
-        </main>
+      {/* Contenido Hero */}
+      <div className="flex-1 relative z-10 flex flex-col items-center justify-center text-white">
+        <h1 className="text-6xl font-bold mb-6 drop-shadow-lg">Bienvenido al Seminario</h1>
+        <Link 
+          href="/materiales"
+          className="bg-transparent border-2 border-[#BB8800] text-white px-10 py-4 rounded-lg font-bold text-xl hover:bg-[#BB8800] transition-all duration-300 shadow-xl backdrop-blur-sm"
+        >
+          Acceder a Materiales
+        </Link>
       </div>
 
       {/* Footer */}
-      <footer className="bg-blue-900 text-white border-t-2 border-yellow-600 mt-12">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="font-bold text-yellow-600 mb-2">Institución</h3>
-              <p className="text-sm text-blue-100">
-                Facultad de Estudios Superiores Acatlán<br/>
-                Universidad Nacional Autónoma de México
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-yellow-600 mb-2">Carrera</h3>
-              <p className="text-sm text-blue-100">
-                Ingeniería en Computación<br/>
-                Seminario de Procesos Estocásticos
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-yellow-600 mb-2">Contacto</h3>
-              <p className="text-sm text-blue-100">
-                Semestre 2026-1<br/>
-                Grupo: 2751
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-blue-800 pt-6 text-center text-xs text-blue-200">
-            <p>
-              © 2026 FES Acatlán, UNAM. Todos los derechos reservados. | 
-              <span className="mx-1">Sitio desarrollado con fines académicos</span>
-            </p>
-          </div>
+      <footer className="relative z-10 w-full bg-[#001f54]/90 text-white p-6 text-center border-t border-[#BB8800]">
+        <div className="flex justify-between px-8 text-sm">
+          <span>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</span>
+          <span>FES Acatlán</span>
         </div>
       </footer>
-    </div>
+    </main>
   );
 }
