@@ -3,24 +3,11 @@
 @import "tailwindcss";
 
 /*
-  --header-height: altura real del header según breakpoint.
-  Se usa en layout.tsx como padding-top del <main>.
-  Ajusta estos valores si el header crece o se reestructura.
+  --header-height: el nuevo Header siempre mide 64px (h-16) en todos los breakpoints
+  gracias al menú hamburguesa. Se usa como padding-top del <main> en layout.tsx.
 */
 :root {
-  --header-height: 100px; /* móvil: logos + nav apilados */
-}
-
-@media (min-width: 640px) {
-  :root {
-    --header-height: 80px; /* tablet */
-  }
-}
-
-@media (min-width: 1000px) {
-  :root {
-    --header-height: 64px; /* desktop: logos y nav en una fila */
-  }
+  --header-height: 64px;
 }
 
 * {

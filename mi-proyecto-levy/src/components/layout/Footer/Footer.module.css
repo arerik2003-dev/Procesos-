@@ -13,8 +13,20 @@
   color: white;
   max-width: 900px;
   z-index: 2;
-  font-size: 1.4rem;
+  font-size: 0.8rem;   /* móvil */
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .footer p {
+    font-size: 0.875rem; /* tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer p {
+    font-size: 1rem;     /* desktop */
+  }
 }
 
 .text {
